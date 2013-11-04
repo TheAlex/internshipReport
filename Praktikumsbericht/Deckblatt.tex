@@ -1,0 +1,62 @@
+\documentclass[a4paper,11pt,DIV=11]{scrreprt}
+
+% Pakete einbinden
+\usepackage[english,ngerman]{babel}
+\usepackage{graphicx}
+\usepackage[T1]{fontenc}
+\usepackage[latin1]{inputenc}
+\usepackage{multicol}
+
+% Kommandos
+\newcommand{\varLogo}{ei} % ei, wi, ma
+\newcommand{\varType}{Praktisches Studiensemester} %Grundpraktikum,Praktisches Studiensemester
+\newcommand{\varTerm}{Wintersemester} %Wintersemester, Sommersemester
+\newcommand{\varYear}{13/14}
+
+\newcommand{\varSurname}{Vorname}
+\newcommand{\varLastname}{Nachname}
+\newcommand{\varCompany}{Firma}
+\newcommand{\varStreet}{Stra\ss{}e}
+
+\begin{document}
+	
+\setlength\parindent{0pt}
+	
+%Titelseite
+\begin{titlepage}
+
+	\begin{figure}[h!] %H
+		\raggedleft
+		\includegraphics[height=2.3cm]{logos/thi_\varLogo.eps}
+	\end{figure}
+	
+	\vspace{0.5cm}
+	
+	\begin{large}
+	\textbf{
+		{\LARGE Praktikumsbericht f\"ur} \\[3ex]
+	}
+	{\varType} \\[1.5ex]
+	{\varTerm~\varYear} \\[1.5ex]
+	
+	\noindent\hrule
+	
+	\vspace{0.5cm}
+	
+	\begin{multicols}{2}
+	Name, Vorname:\newline
+	Studiengang, Semester: \newline
+	Ausbildungsbetrieb:\newline
+	Stra\ss{}e:\newline
+	\vfill \columnbreak
+	\varSurname~\varLastname \newline
+%	\var
+	\varCompany \newline
+	\varStreet \newline
+	...
+	
+	\end{multicols}
+	\end{large}
+\end{titlepage}
+
+\end{document}

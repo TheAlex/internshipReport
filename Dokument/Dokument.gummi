@@ -1,0 +1,6 @@
+version=0.6.0
+typesetter=pdflatex
+steps=texpdf
+root=sekt_korken.tex
+
+file=/home/simon/Dokumente/Schule/Semester 6/ETS/Dokument/Dok.tex
